@@ -28,10 +28,6 @@ const userEducation = new Schema({
     location: {
         type: string, 
         required: true
-    }, 
-    grade: {
-        type: int,
-        required: false
     }
 
 });
