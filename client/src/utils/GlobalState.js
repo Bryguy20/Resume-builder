@@ -5,7 +5,15 @@ const AppContext = createContext();
 const { Provider } = AppContext;
 
 const AppProvider = ({ value = [], ...props }) => {
-  const [state, dispatch] = useAppReducer({});
+  const [state, dispatch] = useAppReducer({
+    education:[],
+    about: '',
+    personal: '',
+    project: [],
+    resume: false,
+    work:[],
+
+  });
 
   return <Provider value={[state, dispatch]} {...props} />;
 };
