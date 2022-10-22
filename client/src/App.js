@@ -13,8 +13,9 @@ import { AppProvider } from "./utils/GlobalState";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Nav from "./components/Nav";
-import NoMatch from "./pages/NoMatch";
+// import NoMatch from "./pages/NoMatch";
 import Signup from "./pages/Signup";
+import Resume from "./pages/Resume";
 
 const httpLink = createHttpLink({
   uri: "/graphql",
@@ -46,7 +47,7 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/login" element={<Login />} />
               <Route path="/signup" element={<Signup />} />
-              <Route path="*" element={<NoMatch />} />
+              <Route path="*" element={<Resume />} />
             </Routes>
           </AppProvider>
         </div>
