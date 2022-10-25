@@ -5,7 +5,7 @@ const { Schema } = mongoose;
 
 const userAbout = new Schema({
     description: {
-        type: string,
+        type: String,
         required: true
     }
 });
