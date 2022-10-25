@@ -1,51 +1,72 @@
 const { gql } = require("apollo-server-express");
 
 const typeDefs = gql`
-  type Category {
-    _id: ID
-    name: String
-  }
+type Skills{
+  _id:ID
+  description: String
+}
+type About {
+  _id: ID
+  description: String
+}
+type Project {
+  _id: ID
+  title: String
+  link: String
+  about: String
+ }
+ type Education {
+    _id:ID
+    schoolName:String
+    majorSubject:String
+    degree: String
+    location: String
 
-  type Product {
+ }
+  type Experience {
     _id: ID
-    name: String
+    position: String
+    companyName: String
+    location: String
     description: String
-    image: String
-    quantity: Int
-    price: Float
-    category: Category
   }
-
-  type Order {
-    _id: ID
-    purchaseDate: String
-    products: [Product]
-  }
-
+  
   type User {
     _id: ID
     firstName: String
     lastName: String
     email: String
-    orders: [Order]
+    password:String
+    education:[Education]
+    workExperience:[Experience]
+    personalInfo: [Personal]
+    project: [Project]
+    skills: [Skills]
+    about: [About]
+
   }
 
-  type Checkout {
-    session: ID
+  type Personal {
+    name: String
+    email: String
+    phoneNumber: Int
+    city: String
+    state: String
   }
-
+ 
   type Auth {
     token: ID
     user: User
   }
 
   type Query {
-    categories: [Category]
-    products(category: ID, name: String): [Product]
-    product(_id: ID!): Product
-    user: User
-    order(_id: ID!): Order
-    checkout(products: [ID]!): Checkout
+    user: User  
+    experience(_id: ID!): [Experience]
+    personal(_id: ID!): [Personal]
+    education(_id: ID!):[Education]
+    skills(_id: ID!):[Skills]
+    project(_id: ID!):[Project]
+    about(_id: ID!):[About]
   }
 
   type Mutation {
@@ -55,14 +76,13 @@ const typeDefs = gql`
       email: String!
       password: String!
     ): Auth
-    addOrder(products: [ID]!): Order
+
     updateUser(
       firstName: String
       lastName: String
       email: String
       password: String
     ): User
-    updateProduct(_id: ID!, quantity: Int!): Product
     login(email: String!, password: String!): Auth
   }
 `;

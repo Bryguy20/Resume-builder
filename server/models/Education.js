@@ -18,15 +18,15 @@ const userEducation = new Schema({
         required: true
     },
     startDate: {
-        type: date, 
+        type: Date, 
         required: true
     },
     endDate: {
-        type: date,
+        type: Date,
         required: false
     },
     location: {
-        type: string, 
+        type: String, 
         required: true
     }
 

@@ -16,11 +16,11 @@ const userPersonal = new Schema({
           required: true
       },
       city: {
-          type: string, 
+          type: String, 
           required: true
       },
       state: {
-          type: string,
+          type: String,
           required: true
       }
 
