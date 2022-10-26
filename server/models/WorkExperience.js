@@ -16,19 +16,19 @@ const userWorkExperience = new Schema({
           required: true
       },
       location: {
-          type: string, 
+          type: String, 
           required: true
       },
       startDate: {
-          type: date,
+          type: Date,
           required: true
       },
       endDate: {
-          type: date, 
+          type: Date, 
           required: false
       }, 
       description: {
-          type: string,
+          type: String,
           required: true
       }
 });

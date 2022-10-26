@@ -24,6 +24,30 @@ const userSchema = new Schema({
     required: true,
     minlength: 5,
   },
+  education: [{
+    type: Schema.Types.ObjectId,
+    ref: "UserEducation",
+  }],
+  workExperience: [{
+    type: Schema.Types.ObjectId,
+    ref: "workExperience",
+  }],
+  about: {
+    type: Schema.Types.ObjectId,
+    ref: "About",
+  },
+ personalInfo: {
+    type: Schema.Types.ObjectId,
+    ref: "personal"
+ },
+ skills:[{
+    type: Schema.Types.ObjectId,
+    ref: "skills"
+ }],
+ project:[{
+    type: Schema.Types.ObjectId,
+    ref: "projects"
+ }],
 });
 
 // set up pre-save middleware to create password
