@@ -12,7 +12,7 @@ import { AppProvider } from "./utils/GlobalState";
 
 import Home from "./pages/Home";
 import Login from "./pages/Login";
-import Nav from "./components/Nav";
+import Nav from "./components/index";
 // import NoMatch from "./pages/NoMatch";
 import Signup from "./pages/Signup";
 import Resume from "./pages/Resume";
