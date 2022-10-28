@@ -2,7 +2,7 @@ const express = require("express");
 const { ApolloServer } = require("apollo-server-express");
 const path = require("path");
 const { authMiddleware } = require("./utils/auth");
-
+const apiRoutes = require('./routes/api')
 const { typeDefs, resolvers } = require("./schemas");
 const db = require("./config/connection");
 
@@ -33,7 +33,7 @@ app.use((req, res, next) => {
   next()
 })
 
-app.use('/api/userdata', apiRoutes)
+app.use('/api', apiRoutes)
 
 
 
