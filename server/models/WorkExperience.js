@@ -1,9 +1,9 @@
 const mongoose = require("mongoose");
 
-const { Schema } = mongoose;
+const Schema = mongoose.Schema;
 
 const userWorkExperience = new Schema({
-    postion: {
+    position: {
         type: String,
         required: true,
       },
@@ -33,5 +33,5 @@ const userWorkExperience = new Schema({
       }
 });
 
-const workExperience = mongoose.model('workExperience', userWorkExperience);
-module.exports = workExperience;
+
+module.exports = mongoose.model('workExperience', userWorkExperience);

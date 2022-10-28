@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const { Schema } = mongoose;
+const  Schema  = mongoose.Schema;
 
 const userProjects = new Schema({
     title: {
@@ -18,5 +18,5 @@ const userProjects = new Schema({
 
 });
 
-const projects = mongoose.model('projects', userProjects);
-module.exports = projects;
+
+module.exports = mongoose.model('projects', userProjects);
