@@ -12,7 +12,7 @@ const userPersonal = new Schema({
           required: true
       }, 
       phoneNumber: {
-          type: int,
+          type: Number,
           required: true
       },
       city: {
@@ -26,5 +26,5 @@ const userPersonal = new Schema({
 
 });
 
-const personal = mongoose.model('personal', userPersonal);
-module.exports = personal;
+
+module.exports = mongoose.model('personal', userPersonal);
