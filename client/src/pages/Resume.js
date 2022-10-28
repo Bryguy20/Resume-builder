@@ -2,8 +2,7 @@ import React from "react";
 import Minimalist from "./Templates/Minimalist";
 import TwoColumn from "./Templates/TwoColumn";
 
-class Resume extends React.Component {
-  render() {
+const Resume = () =>{
     return (
       <React.Fragment>
         {this.props.type === "minimalist" ? (
@@ -33,7 +32,7 @@ class Resume extends React.Component {
         )}
       </React.Fragment>
     );
-  }
+  
 }
 
 export default Resume;
