@@ -1,40 +1,16 @@
-import React from "react";
-import Auth from "../utils/auth";
-import { Link } from "react-router-dom";
+import { Navbar } from "react-bootstrap";
 
-function Nav() {
-  function showNavigation() {
-    if (Auth.loggedIn()) {
-      return (
-        <ul className="flex-row">
-          <li className="mx-1">
-            <a href="/" onClick={() => Auth.logout()}>
-              Logout
-            </a>
-          </li>
-        </ul>
-      );
-    } else {
-      return (
-        <ul className="flex-row">
-          <li className="mx-1">
-            <Link to="/signup">Signup</Link>
-          </li>
-          <li className="mx-1">
-            <Link to="/login">Login</Link>
-          </li>
-        </ul>
-      );
-    }
-  }
 
+const NavBar = () => {
   return (
-    <header className="flex-row px-1">
-      <h1>Sample Application</h1>
-
-      <nav>{showNavigation()}</nav>
-    </header>
+    <nav style={{background: "pink", height: "100px"}}>
+      <header>
+        <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
+          <h1 href="/" style={{textAlign: "center", alignItems: "center"}}>CV Generator App</h1>
+        </Navbar>
+      </header>
+    </nav>
   );
-}
+};
 
-export default Nav;
+export default NavBar;

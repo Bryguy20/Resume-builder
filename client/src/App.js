@@ -10,7 +10,7 @@ import { setContext } from "@apollo/client/link/context";
 import { AppProvider } from "./utils/GlobalState";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
-import NavBar from "./components/Navbar";
+import NavBar from "./components/NavBar";
 // import NoMatch from "./pages/NoMatch";
 import Signup from "./pages/Signup";
 
