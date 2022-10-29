@@ -1,28 +1,44 @@
 import React from "react";
 import Auth from "../utils/auth";
-import { Link } from "react-router-dom";
+import { Form, Link } from "react-router-dom";
 
 function Nav() {
   function showNavigation() {
     if (Auth.loggedIn()) {
       return (
-        <div
-        style={{
-          boxSizing: "border-box",
-          margin: "0 auto",
-          width: "8.5in",
-          height: "11in",
-          backgroundColor: "#fff",
-          boxShadow: "0 3px 8px -3px rgba(0, 0, 0, 0.7)",
-        }}>
-          <header className="flex justify-between items-center font-sans w-full h-1/6">
-            <div className="flex flex-col px-5">
-              <div className="text-3xl"></div>
-              <div className="text-lg pt-3"></div>
+        <div>
+            <ul style={{ position:"absolute", marginLeft: "20px", justifyContent: "flex-end"}} className="flex-row">
+              <li className="mx-1">
+                <a href="/"  onClick={() => Auth.logout()}>
+                   Logout
+               </a>
+              </li>
+            </ul>
+            <div style={{
+              boxSizing: "border-box",
+              margin: "0 auto",
+              width: "8.5in",
+              height: "11in",
+              backgroundColor: "#fff",
+              boxShadow: "0 3px 8px -3px rgba(0, 0, 0, 0.7)",
+            }}>
+              <form style={{marginTop: "60px", position: "absolute", marginLeft: "305px"}}>
+                <label></label>
+                <input type="text" placeholder="Your name here :)"></input>
+              </form>
+              <form style={{ marginTop: "100px", position: "absolute", marginLeft: "200px"}}>
+                <label></label>
+                  <input type="text" placeholder="Your profession and job position" size="50" width="15">
+                  </input>
+              </form>
+                <form style={{ position: "absolute"}}>
+                  <label></label>
+                  <input type= "text" placeholder= "list your previous places of employment here" size="200"></input>
+                </form>
             </div>
-
-          </header>
         </div>
+          
+          
 
         
       );
