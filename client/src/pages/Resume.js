@@ -20,8 +20,7 @@ const [about, setAbout] = useState(null)
   fetchAbout
 }, [])
 
-class Resume extends React.Component {
-  render() {
+const Resume = () =>{
     return (
       <div className="home">
         {about && about.map((about) => (
@@ -29,7 +28,7 @@ class Resume extends React.Component {
         ))}
       </div>
     );
-  }
+  
 }
 
 export default Resume;

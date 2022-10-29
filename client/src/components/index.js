@@ -16,21 +16,23 @@ function Nav() {
       );
     } else {
       return (
+        <div className=" justify-between ">
         <ul className="flex-row">
-          <li className="mx-1">
+          <li className="mx-1 text-white">
             <Link to="/signup">Signup</Link>
           </li>
-          <li className="mx-1">
+          <li className="mx-1 text-white">
             <Link to="/login">Login</Link>
           </li>
         </ul>
+        </div>
       );
     }
   }
 
   return (
-    <header className="flex-row px-1">
-      <h1>Sample Application</h1>
+    <header className=" text-center text-white text-2xl ">
+      <h1>Resume Builder</h1>
 
       <nav>{showNavigation()}</nav>
     </header>
