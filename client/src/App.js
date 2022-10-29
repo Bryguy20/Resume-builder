@@ -13,7 +13,7 @@ import Login from "./pages/Login";
 import NavBar from "./components/NavBar";
 // import NoMatch from "./pages/NoMatch";
 import Signup from "./pages/Signup";
-
+import Resume from "./pages/Resume";
 
 
 const httpLink = createHttpLink({
