@@ -31,10 +31,101 @@ function Nav() {
                   <input type="text" placeholder="Your profession and job position" size="50" width="15">
                   </input>
               </form>
-                <form style={{ position: "absolute"}}>
+              <h2 style={{ position: "absolute", marginTop: "175px", marginLeft: "10px"}}>Work Experience</h2>
+                <form style={{ position: "absolute", marginTop: "225px", marginLeft: "10px"}}>
                   <label></label>
-                  <input type= "text" placeholder= "list your previous places of employment here" size="200"></input>
+                  <input type= "text" placeholder= "list your previous places of employment here" height= "50" size="75"></input>
                 </form>
+                <form style={{ position: "absolute", marginTop: "275px", marginLeft: "10px"}}>
+                  <label></label>
+                  <input type= "text" placeholder= "list your previous places of employment here" height= "50" size="75"></input>
+                </form>
+                <form style={{ position: "absolute", marginTop: "325px", marginLeft: "10px"}}>
+                  <label></label>
+                  <input type= "text" placeholder= "list your previous places of employment here" height= "50" size="75"></input>
+                </form>
+               <form style={{ position: "absolute", marginTop: "375px", marginLeft: "10px"}}>
+                  <label></label>
+                  <input type= "text" placeholder= "list your previous places of employment here" height= "50" size="75"></input>
+               </form>
+               <h2 style ={{ position: "absolute", marginTop: "425px", marginLeft: "10px"}}>Education and academic achievements</h2>
+               <form style={{ position: "absolute", marginTop: "475px", marginLeft: "10px"}}>
+                  <label></label>
+                  <input type= "text" placeholder= "anyone smell margerin?" height= "50" size="75"></input>
+               </form>
+               <form style={{ position: "absolute", marginTop: "525px", marginLeft: "10px"}}>
+                  <label></label>
+                  <input type= "text" placeholder= "I quit coding Im gonna cook crystal meth" height= "50" size="75"></input>
+               </form>
+               <form style={{ position: "absolute", marginTop: "575px", marginLeft: "10px"}}>
+                  <label></label>
+                  <input type= "text" placeholder= "me personally, I have worked at a mcdonalds for 17 years" height= "50" size="75"></input>
+               </form>
+               <form style={{ position: "absolute", marginTop: "625px", marginLeft: "10px"}}>
+                  <label></label>
+                  <input type= "text" placeholder= "2 cool 4 school" height= "50" size="75"></input>
+               </form>
+               <h2 style={{ position:"absolute", marginTop: "675px", marginLeft: "10px"}}>Skills and interests</h2>
+               <form style={{ position: "absolute", marginTop: "725px", marginLeft: "10px"}}>
+                  <label></label>
+                  <input type= "text" placeholder= "2 cool 4 school" height= "50" size="75"></input>
+               </form>
+               <form style={{ position: "absolute", marginTop: "775px", marginLeft: "10px"}}>
+                  <label></label>
+                  <input type= "text" placeholder= "2 cool 4 school" height= "50" size="75"></input>
+               </form>
+               <h2 style={{ position:"absolute", marginTop: "825px", marginLeft: "10px"}}>Check off the languages you are confident with</h2>
+               <form style={{position: "absolute", marginTop: "875px"}}> HTML
+                <input type="checkbox">
+                </input>
+               </form>
+               <form style={{position: "absolute", marginTop: "925px"}}> REACT
+                <input type="checkbox">
+                </input>
+               </form>
+               <form style={{position: "absolute", marginTop: "975px"}}> SQL
+                <input type="checkbox">
+                </input>
+               </form>
+               <form style={{position: "absolute", marginTop: "1025px"}}> CSS
+                <input type="checkbox">
+                </input>
+               </form>
+
+               <form style={{position: "absolute", marginTop: "875px", marginLeft: "120px"}}> MONGO
+                <input type="checkbox">
+                </input>
+               </form>
+               <form style={{position: "absolute", marginTop: "925px", marginLeft: "120px"}}> JAVASCRIPT
+                <input type="checkbox">
+                </input>
+               </form>
+               <form style={{position: "absolute", marginTop: "975px", marginLeft: "120px"}}> APOLLO
+                <input type="checkbox">
+                </input>
+               </form>
+               <form style={{position: "absolute", marginTop: "1025px", marginLeft: "120px"}}> PYTHON
+                <input type="checkbox">
+                </input>
+               </form>
+
+               <form style={{position: "absolute", marginTop: "875px", marginLeft: "240px"}}> PHP
+                <input type="checkbox">
+                </input>
+               </form>
+               <form style={{position: "absolute", marginTop: "925px", marginLeft: "240px"}}> RUST
+                <input type="checkbox">
+                </input>
+               </form>
+               <form style={{position: "absolute", marginTop: "975px", marginLeft: "240px"}}> C++
+                <input type="checkbox">
+                </input>
+               </form>
+               <form style={{position: "absolute", marginTop: "1025px", marginLeft: "240px"}}> NPM
+                <input type="checkbox">
+                </input>
+               </form>
+               
             </div>
         </div>
           
