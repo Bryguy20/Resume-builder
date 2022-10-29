@@ -1,16 +1,47 @@
-import React, { useState} from 'react';
-import{ Form, Button, Alert } from 'react-bootstrap';
-import { Navbar, NavbarBrand, Nav, NavItem } from "react-bootstrap";
+import React from "react";
+import Auth from "../utils/auth";
+import { Link } from "react-router-dom";
+import { Navbar, NavbarBrand, } from "react-bootstrap";
 
-const NavBar = () => {
-    return (
-        <nav>
-            <header>
-                <NavBar bg="light" variant="dark" expand="lg"></NavBar>
-                    <NavbarBrand href="/" className="font-weight-bold">Resume BUILDER!</NavbarBrand>
-            </header>
-        </nav>
-    )
-};
+function Nav() {
+  function showNavigation() {
+    if (Auth.loggedIn()) {
+      return (
+      <nav>
+        <header>
+          <Navbar bg="light" variant="dark" expand="lg"></Navbar>
+          <NavbarBrand href="/" className="font-weight-bold">Resume BUILDER!</NavbarBrand>
+            <ul className="flex-row">
+              <li className="mx-1">
+               <a href="/" onClick={() => Auth.logout()}>
+                  Logout
+               </a>
+              </li>
+            </ul>
+        </header>
+      </nav>
+      );
+    } else {
+      return (
+        <ul className="flex-row">
+          <li className="mx-1">
+            <Link to="/signup">Signup</Link>
+          </li>
+          <li className="mx-1">
+            <Link to="/login">Login</Link>
+          </li>
+        </ul>
+      );
+    }
+  }
 
-export default NavBar;
+  return (
+    <header className="flex-row px-1">
+      <h1>Sample Application</h1>
+
+      <nav>{showNavigation()}</nav>
+    </header>
+  );
+}
+
+export default Nav;
