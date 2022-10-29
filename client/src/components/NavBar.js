@@ -6,13 +6,25 @@ function Nav() {
   function showNavigation() {
     if (Auth.loggedIn()) {
       return (
-        <ul className="flex-row">
-          <li className="mx-1">
-            <a href="/" onClick={() => Auth.logout()}>
-              Logout
-            </a>
-          </li>
-        </ul>
+        <div
+        style={{
+          boxSizing: "border-box",
+          margin: "0 auto",
+          width: "8.5in",
+          height: "11in",
+          backgroundColor: "#fff",
+          boxShadow: "0 3px 8px -3px rgba(0, 0, 0, 0.7)",
+        }}>
+          <header className="flex justify-between items-center font-sans w-full h-1/6">
+            <div className="flex flex-col px-5">
+              <div className="text-3xl"></div>
+              <div className="text-lg pt-3"></div>
+            </div>
+
+          </header>
+        </div>
+
+        
       );
     } else {
       return (
@@ -40,7 +52,7 @@ function Nav() {
     </body>
       <footer style={{ background: "pink"}}>
         <h3 style={{ marginTop: "600px", position: "absolute", marginLeft: "425px", background: "pink"}}>
-          Contact our team @ Bryguy20, DeQuanD, BenKawalec, HappyPanda6453, and AaronWilson113 on Github
+          Contact our team @ Bryguy20, DeQuanD, BenKawalec, HappyPanda6453, and AaronWilson113
           <br></br>
         </h3>
       </footer>
