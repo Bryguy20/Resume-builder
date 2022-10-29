@@ -17,7 +17,7 @@
   This application where the user can use to get a employer ready resume up to date and would not have any problem and it's all working. the user can login or sign up and would be taken to the application and get started.
 
   ## [authors](#table-of-contents)
-  none
+  Bryan Segarra, Aaron Wilson, Micheal Serra, Benjamin Kawalec, DeQuan Dickson
 
   ## [Usage](#table-of-contents)
   here is the link of the deployed link: https://resume-generate.herokuapp.com/
