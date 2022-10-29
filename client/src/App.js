@@ -13,7 +13,7 @@ import Login from "./pages/Login";
 import NavBar from "./components/NavBar";
 // import NoMatch from "./pages/NoMatch";
 import Signup from "./pages/Signup";
-import footer from "./pages/footer";
+
 
 
 const httpLink = createHttpLink({
@@ -46,7 +46,6 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/login" element={<Login />} />
               <Route path="/signup" element={<Signup />} />
-              <Route Path="/footer" element={<footer />} />
             </Routes>
           </AppProvider>
         </div>
