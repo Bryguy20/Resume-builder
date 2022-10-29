@@ -1,8 +1,6 @@
 import React from "react";
-import Minimalist from "./Templates/Minimalist";
-import TwoColumn from "./Templates/TwoColumn";
 import { useEffect, useState } from 'react'
-import about from "../../../server/models/About";
+
 
 
 
