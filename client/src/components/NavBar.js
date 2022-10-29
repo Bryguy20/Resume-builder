@@ -75,55 +75,59 @@ function Nav() {
                   <input type= "text" placeholder= "2 cool 4 school" height= "50" size="75"></input>
                </form>
                <h2 style={{ position:"absolute", marginTop: "825px", marginLeft: "10px"}}>Check off the languages you are confident with</h2>
-               <form style={{position: "absolute", marginTop: "875px"}}> HTML
+               <form style={{position: "absolute", marginTop: "875px", marginLeft: "25px"}}> HTML
                 <input type="checkbox">
                 </input>
                </form>
-               <form style={{position: "absolute", marginTop: "925px"}}> REACT
+               <form style={{position: "absolute", marginTop: "925px", marginLeft: "25px"}}> REACT
                 <input type="checkbox">
                 </input>
                </form>
-               <form style={{position: "absolute", marginTop: "975px"}}> SQL
+               <form style={{position: "absolute", marginTop: "975px", marginLeft: "25px"}}> SQL
                 <input type="checkbox">
                 </input>
                </form>
-               <form style={{position: "absolute", marginTop: "1025px"}}> CSS
-                <input type="checkbox">
-                </input>
-               </form>
-
-               <form style={{position: "absolute", marginTop: "875px", marginLeft: "120px"}}> MONGO
-                <input type="checkbox">
-                </input>
-               </form>
-               <form style={{position: "absolute", marginTop: "925px", marginLeft: "120px"}}> JAVASCRIPT
-                <input type="checkbox">
-                </input>
-               </form>
-               <form style={{position: "absolute", marginTop: "975px", marginLeft: "120px"}}> APOLLO
-                <input type="checkbox">
-                </input>
-               </form>
-               <form style={{position: "absolute", marginTop: "1025px", marginLeft: "120px"}}> PYTHON
+               <form style={{position: "absolute", marginTop: "1025px",marginLeft: "25px"}}> CSS
                 <input type="checkbox">
                 </input>
                </form>
 
-               <form style={{position: "absolute", marginTop: "875px", marginLeft: "240px"}}> PHP
+               <form style={{position: "absolute", marginTop: "875px", marginLeft: "325px"}}> MONGO
                 <input type="checkbox">
                 </input>
                </form>
-               <form style={{position: "absolute", marginTop: "925px", marginLeft: "240px"}}> RUST
+               <form style={{position: "absolute", marginTop: "925px", marginLeft: "325px"}}> JAVASCRIPT
                 <input type="checkbox">
                 </input>
                </form>
-               <form style={{position: "absolute", marginTop: "975px", marginLeft: "240px"}}> C++
+               <form style={{position: "absolute", marginTop: "975px", marginLeft: "325px"}}> APOLLO
                 <input type="checkbox">
                 </input>
                </form>
-               <form style={{position: "absolute", marginTop: "1025px", marginLeft: "240px"}}> NPM
+               <form style={{position: "absolute", marginTop: "1025px", marginLeft: "325px"}}> PYTHON
                 <input type="checkbox">
                 </input>
+               </form>
+
+               <form style={{position: "absolute", marginTop: "875px", marginLeft: "625px"}}> PHP
+                <input type="checkbox">
+                </input>
+               </form>
+               <form style={{position: "absolute", marginTop: "925px", marginLeft: "625px"}}> RUST
+                <input type="checkbox">
+                </input>
+               </form>
+               <form style={{position: "absolute", marginTop: "975px", marginLeft: "625px"}}> C++
+                <input type="checkbox">
+                </input>
+               </form>
+               <form style={{position: "absolute", marginTop: "1025px", marginLeft: "625px"}}> NPM
+                <input type="checkbox">
+                </input>
+               </form>
+
+               <form style={{position: "absolute", marginRight: "250px"}}>
+                <input type = "date"></input>
                </form>
                
             </div>
