@@ -7,9 +7,7 @@ import {
   createHttpLink,
 } from "@apollo/client";
 import { setContext } from "@apollo/client/link/context";
-
 import { AppProvider } from "./utils/GlobalState";
-
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Nav from "./components/index";
@@ -42,7 +40,7 @@ function App() {
       <Router>
         <div>
           <AppProvider>
-            <Nav />
+            <Nav/>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/login" element={<Login />} />

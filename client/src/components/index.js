@@ -1,18 +1,25 @@
 import React from "react";
 import Auth from "../utils/auth";
 import { Link } from "react-router-dom";
+import { Navbar, NavbarBrand, } from "react-bootstrap";
 
 function Nav() {
   function showNavigation() {
     if (Auth.loggedIn()) {
       return (
-        <ul className="flex-row">
-          <li className="mx-1">
-            <a href="/" onClick={() => Auth.logout()}>
-              Logout
-            </a>
-          </li>
-        </ul>
+      <nav>
+        <header>
+          <Navbar bg="light" variant="dark" expand="lg"></Navbar>
+          <NavbarBrand href="/" className="font-weight-bold">Resume BUILDER!</NavbarBrand>
+            <ul className="flex-row">
+              <li className="mx-1">
+               <a href="/" onClick={() => Auth.logout()}>
+                  Logout
+               </a>
+              </li>
+            </ul>
+        </header>
+      </nav>
       );
     } else {
       return (
